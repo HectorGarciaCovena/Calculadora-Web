@@ -1,13 +1,17 @@
+// Se asigna a variable display lo que tenga el contenga el display de la calculadora 
 let display = document.getElementById('display');
 
-function mostrarEnDisplay(value) {
+// Se le da un valor primitivo a los objetos ingresados al display de la calculadora
+function agregarObjeto(value) {
   display.value += value;
 }
 
+// Función para Limpiar display de la calculadora
 function limpiarDisplay() {
   display.value = '';
 }
 
+// Función para Limpiar el ultimo elemento de la calculadora
 function borraElemento() {
   var contenidoActual=display.value;
   // Verificar que hay al menos un dígito antes de retroceder
@@ -17,6 +21,7 @@ function borraElemento() {
     display.value = nuevoContenido;
   }
 }
+
 
 function agregarNumero(numero) {
   // Agregar el número al final del contenido actual
