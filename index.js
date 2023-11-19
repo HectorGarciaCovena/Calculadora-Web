@@ -31,7 +31,7 @@ function agregarNumero(numero) {
 // Función que calcula el Resultado
 function calcularResultado() {
   try {
-    display.value = eval(display.value);
+    display.value = eval(display.value); // Evalúa y calcula la operación ingresada en el display
   } catch (error) {
     display.value = 'Error';
   }
