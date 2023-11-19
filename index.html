@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+  
+  <!-- Llamado al css -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <span style="color: rgb(160, 29, 29);">
     <h2><center><strong>CALCULADORA BÁSICA</strong></center></h2>    
   
-    <div class="calculator">    
-        <input class="cuadro" type="text" id="display" disabled>
-    </div> 
+  <!-- Clase para el display de la calculadora -->
+  <div class="calculator">    
+      <input class="cuadro" type="text" id="display" disabled>
+  </div> 
 
+  <!-- Clase para la primera fila de la calculadora -->
   <div class="calculator">
     <div class="buttons">
       <button onclick="limpiarDisplay()">C</button>
@@ -23,6 +27,7 @@
     </div>
   </div>
 
+  <!-- Clase para la segunda fila de la calculadora -->
   <div class="calculator">
     <div class="buttons">
       <button onclick="agregarNumero('9')">9</button>
@@ -32,6 +37,7 @@
     </div>
   </div>
 
+  <!-- Clase para la tercera fila de la calculadora -->
   <div class="calculator">
     <div class="buttons">
       <button onclick="agregarNumero('6')">6</button>
@@ -41,6 +47,7 @@
     </div>
   </div>
 
+  <!-- Clase para la cuarta fila de la calculadora -->
   <div class="calculator">
     <div class="buttons">
       <button onclick="agregarNumero('3')">3</button>
@@ -50,6 +57,7 @@
     </div>    
   </div>
   
+  <!-- Clase para la quinta fila de la calculadora -->
   <div class="calculator">
     <div class="buttons">
       <button class="" onclick="agregarObjeto('(')">(</button>
@@ -59,6 +67,7 @@
     </div>    
   </div>  
 
+  <!-- Llamado al JavaScript -->
   <script src="index.js"></script>
 </body>
 </html>
